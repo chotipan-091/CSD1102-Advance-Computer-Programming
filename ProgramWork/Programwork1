@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class GuessNumberGame {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // สุ่มเลขระหว่าง 1 - 20 โดยไม่ใช้ Random library
+        int secretNumber = (int)(Math.random() * 20) + 1;
+        int maxTries = 5;
+
+        System.out.println("=== เกมทายตัวเลข (1-20) ===");
+        System.out.println("คุณมีสิทธิ์ทายได้ 5 ครั้ง");
+
+        for (int i = 1; i <= maxTries; i++) {
+            System.out.print("ครั้งที่ " + i + " กรุณาทายตัวเลข: ");
+            int guess = sc.nextInt();
+
+            if (guess == secretNumber) {
+                System.out.println("🎉 ยินดีด้วย! คุณทายถูกต้อง");
+                break;
+            } else if (guess < secretNumber) {
+                System.out.println("❌ ตัวเลขน้อยเกินไป");
+            } else {
+                System.out.println("❌ ตัวเลขมากเกินไป");
+            }
+
+            if (i == maxTries) {
+                System.out.println("เกมจบแล้ว! เลขที่ถูกคือ " + secretNumber);
+            }
+        }
+
+        sc.close();
+    }
+}
