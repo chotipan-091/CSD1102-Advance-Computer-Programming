@@ -4,7 +4,7 @@ import java.util.Random;
 public class GuessNumberGame {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         Random random = new Random();
 
         int num = random.nextInt(20) + 1;
@@ -15,7 +15,7 @@ public class GuessNumberGame {
 
         for (int i = 1; i <= limit; i++) {
             System.out.print("Enter Number : ");
-            int guess = sc.nextInt();
+            int guess = scn.nextInt();
 
             if (guess == num) {
                 System.out.println("Correct!!!");
