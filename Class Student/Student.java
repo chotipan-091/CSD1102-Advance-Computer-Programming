@@ -11,6 +11,12 @@ public class Student {
     private boolean isActive;
     private int totalVisit;
 
+public Student() {
+        this.membershipType = "FREE";
+        this.isActive = false;
+        this.totalVisit = 0;
+    }
+
 public Student(String studentId, String name, String faculty, int year) {
         this.studentId = studentId;
         this.name = name;
@@ -19,7 +25,7 @@ public Student(String studentId, String name, String faculty, int year) {
         this.membershipType = "FREE";
         this.isActive = true;
         this.totalVisit = 0;
-}
+    }
 
 public boolean checkMembershipStatus() {
         Date today = new Date();
@@ -65,3 +71,4 @@ public void checkIn() {
         return totalVisit;
     }
 }
+
