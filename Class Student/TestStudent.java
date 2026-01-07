@@ -6,6 +6,8 @@ public class TestStudent {
     
         Student s1 = new Student("65123456", "Chotipan", null, 0);
 
+        Student s2 = new Student();
+
 
         Date expireDate = new Date(2026, 0, 31); 
 
@@ -22,3 +24,4 @@ public class TestStudent {
 
     }
 }
+
