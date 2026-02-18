@@ -53,7 +53,7 @@ RescueRobot
 → has-a GPSTracker  
 → has-a ThermalCamera  
 
-https://drive.google.com/file/d/1fIqKQBMHcE9pbneCGv612I29nWFGb4Ft/view?usp=sharing
+[https://drive.google.com/file/d/1fIqKQBMHcE9pbneCGv612I29nWFGb4Ft/view?usp=sharing](https://drive.google.com/file/d/1lwqCB7LvRrtWT9pziHnBmqJw1SXZ6trI/view?usp=sharing)
 
 ---
 ### Key Classes
